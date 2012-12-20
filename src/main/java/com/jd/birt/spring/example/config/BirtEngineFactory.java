@@ -17,6 +17,7 @@ import org.eclipse.birt.core.framework.Platform;
 import org.eclipse.birt.report.engine.api.EngineConfig;
 import org.eclipse.birt.report.engine.api.IReportEngine;
 import org.eclipse.birt.report.engine.api.IReportEngineFactory;
+import org.osgi.service.component.annotations.Component;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.context.ApplicationContext;
@@ -31,6 +32,7 @@ import org.springframework.util.Assert;
  * @author wangjunming
  * @since 1.0 2012-12-16
  */
+// @Component
 public class BirtEngineFactory implements FactoryBean<IReportEngine>,
 		ApplicationContextAware, DisposableBean {
 
